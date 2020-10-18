@@ -1,0 +1,190 @@
+/* Reduce motion option */
+@media screen and (
+    prefers-reduced-motion: reduce) {
+        html {
+            scroll-behavior: auto;
+        }
+    }
+
+
+/*desktops - higher resolution*/
+@media (min-width: 1281px) {
+    {}
+}
+
+/*laptops, desktops*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    {
+
+    }
+}
+
+
+
+/*tablets, ipads (portrait)*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    {
+
+    }
+}
+
+/*tablets, ipads (landscape)*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    {
+
+    }
+}
+
+/*low resolution tablets, mobiles (landscape)*/
+@media (min-width: 481px) and (max-width: 767px){
+
+body {
+    /* display: flex;
+        flex-flow: row wrap; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start; */
+
+  }  
+}
+
+/*smartphones mobiles (portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+body {
+  
+    /* display: flex;
+        flex-flow: row wrap; 
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start; */
+
+           /* 
+    .dropList {
+        width: 100%;
+    
+    }
+    .rolldown-list li {
+        width: 100%;
+    }
+    #myList {
+        width: 100%;
+        color: red;
+    }
+ */
+
+  } 
+  
+ 
+  }
+
+    header {
+        /* padding: 0 1% 0 1%; */
+        /* max-width: 98%; */
+        margin: 0 auto;
+       
+      
+    }
+
+
+    .image-box {
+      padding-top: 0;
+      justify-content: center;
+     
+    }
+        
+        /* Wildfires San Diego font */
+      .image-box h1{
+        font-size: 1.8em;
+        
+        
+       
+        
+      }
+
+  img {
+    width: 100vw;
+           height: 300px;
+           margin: 0 auto;
+   
+  }
+
+     
+
+.navigation {
+  width: 100%;
+}
+
+#hamnav {
+  width: 100%;
+}
+
+          
+          #hamnav label { 
+            display: inline-block; 
+            color: white;
+            background: #a02620;
+            font-style: normal;
+            font-size: 1.2em;
+            padding: 10px;
+            width: 25%;
+            margin: 0 auto;
+            
+          }
+        
+          /* Break down menu items into vertical */
+          #hamitems a {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            padding: 25px;
+            border-top: 1px solid #333;
+            
+            
+          }
+        
+          /* Toggle Show/Hide Menu */
+          #hamitems { 
+            display: none; 
+            
+            
+          }
+          #hamnav input:checked ~ #hamitems { 
+            display: block; 
+          }
+        
+
+        
+
+
+        main {
+            /* letter-spacing: 1px;
+            line-height: 30px; */
+            max-width: 100%;
+            padding: 5%;
+          }
+
+          .biography {
+              padding: 5%;
+              font-size: 1.3em;
+          }
+
+         
+
+          article {
+              padding: 5%;
+          }
+
+          .social-links {
+              display: flex;
+              flex-flow: wrap;
+          }
+          .footer_nav {
+              margin: 0 auto;
+              display: flex;
+              flex-flow: nowrap;
+              justify-content: center;
+              align-items: center;
+          }
+        
+}
+

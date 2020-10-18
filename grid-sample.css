@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-rows: 192px min-content min-content 1fr;
+    grid-template-columns: 1fr 20em;
+ }
+ 
+ #sitemast {
+    grid-row: 1; 
+    grid-column: 1 / span 2;
+    background-color: aqua;
+ }
+ 
+ #search {
+    grid-row: 2; 
+    grid-column: 2;
+    background-color: rgb(170, 69, 69);
+ }
+ 
+ #main {
+    grid-row: 3; 
+    grid-column: 1;
+    background-color: rgb(78, 199, 54);
+ }
+ 
+ #extra  {
+    grid-row: 3; 
+    grid-column: 2;
+    background-color: rgb(192, 85, 160);
+ }
+ 
+ #navigate {
+    grid-row: 2; 
+    grid-column: 1;
+    background-color: rgb(187, 163, 96);
+ }
+ 
+ #footer {
+    grid-row: 4; 
+    grid-column: 1;
+    background-color: rgb(34, 75, 75);
+ }
