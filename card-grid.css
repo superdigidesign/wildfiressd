@@ -24,6 +24,6 @@
     width: 100%;
     }
 
-    .card-paragraph a {
+    .card-paragraph * {
       padding: 0 2% 0 2%;
     }
