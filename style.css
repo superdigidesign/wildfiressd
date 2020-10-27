@@ -30,32 +30,25 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 3em;
-  /* font-weight: 900; */
+  font-size: 2.5em;
   letter-spacing: 0.1em;
- color: rgb(220, 77, 20);
-  /* mix-blend-mode: overlay; */
-  text-shadow: 2px 2px black;
+  color: rgb(187, 36, 36);
+  text-shadow: 2px 2px rgba(167, 167, 167, 0.644);
   margin-top: -175px;
-  
-
 }
 
 h2 {
-  color: rgb(187, 109, 6);
-  text-shadow: 1px 1px black;
+  color: rgb(187, 36, 36);
+  text-shadow: 1px 1px rgba(197, 197, 197, 0.644);
   font-size: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;
-  /* font-weight: bold; */
-  /* padding: 0 5% 2% 5%; */
   z-index: 2;
 }
 
 h3 {
   color: 333333;
   font-size: 1.3em;
-  /* padding-left: 10%; */
   padding: 1% 1% 1% 1%;
   border-radius: 5px;
   text-align: center;
@@ -68,8 +61,9 @@ h4 {
   color: #4b7685;
   font-size: 1.3em;
   font-weight: bold;
-  padding-left: 2%;
-  text-align: left;
+  padding: 3% 0 3% 0;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
 }
 
 
@@ -82,18 +76,21 @@ h4 {
 
 
 header {
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-/* width: 100vw; */
-  height: 550px;
+  width: 100vw;
+  height: 775px;/* must set a specified height */
   margin: 0 auto;
-
-  
-
+  background-image: url("images/Fire-Flbrk-CA-ETAlmendarez_2020-2400x1600.jpg");
+  background-color: rgba(255, 0, 0, 0.575);/* Used if the image is unavailable */
+  background-position: center;/* Center the image */
+  background-repeat: no-repeat;/* Do not repeat the image */
+  background-size: cover;/* Resize the background image to cover the entire container */
+  top: 0px;
+  z-index: -1;
 }
 
 /*------------------------------------*\
@@ -101,27 +98,12 @@ header {
    Hero image blend
    
  \*------------------------------------*/
-.image-box {
-  margin: 0 auto; 
-  width: 100vw;
-  top: 0px;
-  z-index: -1;
-  
-  /* height: 300px;  */
-}
 
 .image-box img {
-  position: absolute;
   z-index: -1;
-  /* font-size: 6em; */
-  width: 100vw; 
-  height: auto;
   margin: 0 auto;
   top: 0px;
- 
 }
-
-
 
 
 
@@ -133,7 +115,6 @@ header {
 .five-p {
   padding-top: 2%;
   margin: 0 auto;
-
   text-align: center;
 }
 
@@ -148,12 +129,10 @@ header {
   background-color: rgb(0, 0, 0);
   height: 50px;
   width: 200px;
-  
-  
 }
 
 time #msg {
-color: white;
+  color: white;
 }
 
 
@@ -164,28 +143,27 @@ color: white;
  \*------------------------------------*/
 
 .happening-now {
- margin: 0 auto;
- max-width: 90%;
- padding-top: 3%;
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 3%;
+  text-align: center;
 }
 
 
 .now .list-items {
- 
+  display: flex;
+  flex-direction: column;
 
- display: flex;
- flex-direction: column;
- 
 }
 
 li {
- letter-spacing: 1px;
- line-height: 30px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 .updates {
- letter-spacing: 1px;
- line-height: 30px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 
@@ -207,45 +185,49 @@ li {
   text-align: center;
   margin-top: -8px;
   background: rgb(100, 100, 100);
-  /* Optional */
   position: sticky;
   top: 0;
   padding: 0 5% 0 5%;
-
 }
 
 /* Hide Hamburger */
 #hamnav label,
 #hamburger {
   display: none;
-
-
 }
 
 /* Horizontal Menu Items */
 #hamitems {
   display: flex;
-
   justify-content: space-evenly;
   letter-spacing: 4px;
   font-weight: bold;
-
 }
 
 #hamitems a {
-
   width: 20%;
   /* 100% / 5 tabs = 20% */
   padding: 15px;
+  border-top: 1px solid #581b0a;
   color: white;
-  /* text-decoration: none; */
   text-align: center;
+  
 }
 
 #hamitems a:hover {
   background: #581b0a;
+  transform: scale(1.1);
+  transition-duration: 4s;
+  transition-delay: 1s;
 }
 
+
+#hamnav label a:hover {
+  background: #df481f;
+  transform: scale(1.1);
+  transition-duration: 4s;
+  
+}
 
 
 /*------------------------------------*\
@@ -257,10 +239,9 @@ li {
 }
 
 
-  .twitter-feed {
+.twitter-feed {
   margin: 0 auto;
   text-align: center;
-  
 }
 
 
@@ -268,7 +249,6 @@ li {
 main {
   max-width: 80%;
   margin: 0 auto;
-
 }
 
 
@@ -276,17 +256,42 @@ main {
     RSS feed
   \*------------------------------------*/
 .news-feed {
-  /* background-color: #7996a0; */
   height: 230px;
   overflow: scroll;
   scrollbar-darkshadow-color: #50554f;
   width: 80%;
   margin: 0 auto;
   padding-top: 3%;
-  
 }
 
 
+/*------------------------------------*\
+   News links
+  \*------------------------------------*/
+.news-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  padding: 3%;
+}
+
+
+
+.links a {
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+}
+
+a:hover {
+  background-color: #555555e0;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
 
 
 
@@ -296,16 +301,12 @@ main {
 
 
 
-  .iframes {
+.iframes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
-  /* max-width: 85%; */
-  /* vertical-align: middle; */
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
   margin: 0 auto;
 }
 
@@ -319,15 +320,14 @@ iframe {
   width: 450px;
   height: 450px;
   margin-top: 25px;
-  /* padding-top: 5%; */
   object-fit: contain;
-  overflow-y: scroll; /* Add the ability to scroll */
+  overflow-y: scroll;
   overflow-x: scroll;
-  /* border: 1px solid black; */
-  /* width: 30%; */
   /* Hide scrollbar for IE, Edge and Firefox */
--ms-overflow-style: none;  /* IE and Edge */
-scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 
@@ -342,14 +342,13 @@ scrollbar-width: none;  /* Firefox */
 
 hr {
   border-top: 4px solid #50554f;
-  
   max-width: 70%;
- 
 }
 
 
 a {
   text-decoration: none;
+  color: red;
 }
 
 
@@ -385,11 +384,11 @@ p {
 .button2 {
   background-color: white;
   color: black;
-  border: 2px solid #008CBA;
+  border: 2px solid #60838F;
 }
 
 .button2:hover {
-  background-color: #008CBA;
+  background-color: #60838F;
   color: white;
 }
 
@@ -423,7 +422,6 @@ p {
 details {
   margin-bottom: 20px;
   width: 100%;
- 
 }
 
 details p {
@@ -480,7 +478,6 @@ section {
 .table-bordered td,
 .table-bordered th {
   border: 2px solid #425664;
-  
 }
 
 .responsive-table {
@@ -498,7 +495,6 @@ section {
   border: 0;
   height: 1px;
   width: 1px;
-
   overflow: hidden;
 }
 
@@ -543,7 +539,6 @@ section {
 
 .responsive-table tfoot {
   font-size: 1em;
-  /* font-style: italic; */
 }
 
 .responsive-table tbody tr {
@@ -664,21 +659,16 @@ section {
 footer {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
   align-items: center;
 
 }
 
 /* Footer Styles*/
 .footer {
-  /* display: flex; */
-  /* justify-content: space-around; */
   margin: 0 auto;
   width: 100%;
   background-color: rgb(0, 0, 0);
-  /* padding: 20px 0 20px 0; */
   padding-bottom: 3%;
-
 }
 
 /* Footer nav links Styles */
@@ -689,16 +679,11 @@ footer {
   justify-content: center;
   overflow: hidden;
   padding: 10px;
-
 }
 
 
 .footer_nav a {
-  /* float: left;
-      display: block; */
   color: #f2f2f2;
-
-  /* text-align: center; */
   padding: 40px;
   text-decoration: none;
 }
@@ -709,9 +694,6 @@ footer {
   color: rgb(27, 27, 27);
   align-content: center;
   justify-items: center;
-
-
-
 }
 
 
@@ -730,7 +712,6 @@ footer {
   padding-left: 3%;
   padding-top: 3%;
   text-decoration: none;
-
 }
 
 .social-btn {
@@ -743,7 +724,6 @@ footer {
   margin: 5px;
   margin-left: 25px;
   transition: 1s;
-
 }
 
 .social-btn span {
@@ -751,25 +731,20 @@ footer {
   overflow: hidden;
   transition: 1s;
   text-align: center;
-
 }
 
 .social-btn:hover {
   width: 150px;
   border-radius: 5px;
-
-
 }
 
 .social-btn:hover span {
   padding: 12px;
   width: max-content;
-
 }
 
 #twitter svg {
   fill: #1da1f2;
-
 }
 
 #linkedin svg {
@@ -799,5 +774,4 @@ footer {
 img {
   width: 180px;
   height: 200px;
-
 }
