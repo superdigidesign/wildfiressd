@@ -84,8 +84,8 @@ header {
   width: 100vw;
   height: 775px;/* must set a specified height */
   margin: 0 auto;
-  background-image: url("images/Fire-Flbrk-CA-ETAlmendarez_2020-2400x1600.jpg");
   background-color: rgba(255, 0, 0, 0.575);/* Used if the image is unavailable */
+  background-image: url("images/Fire-Flbrk-CA-ETAlmendarez_2020-2400x1600.jpg");
   background-position: center;/* Center the image */
   background-repeat: no-repeat;/* Do not repeat the image */
   background-size: cover;/* Resize the background image to cover the entire container */
