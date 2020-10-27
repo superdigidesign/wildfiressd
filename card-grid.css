@@ -3,6 +3,7 @@
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-gap: 30px;
     align-items: stretch;
+    width: 80%;
     }
   .grid > article {
     border: 1px solid #ccc;
@@ -26,4 +27,37 @@
 
     .card-paragraph {
       padding: 0 2% 0 2%;
+      margin: 0 auto;
+      text-align: center;
+      list-style-type: none;
     }
+
+    li {
+      padding: 3px 0 3px 0;
+    }
+
+    /* More button */
+.card-button {
+  border: none;
+  color: white;
+  /* padding: 16px 32px; */
+  
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  /* font-weight: bold; */
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.card-button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #60838F;
+}
+
+.card-button2:hover {
+  background-color: #60838F;
+  color: white;
+}
